@@ -8,12 +8,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cp src/index.html dist/index.html && cp src/age_lithosphere_map_noscale.tif dist/age_lithosphere_map_noscale.tif && webpack --mode production",
     "dev": "npm run build && webpack serve --mode development",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Loosetooth",
   "license": "MIT",
   "devDependencies": {
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "ts-loader": "^9.4.2",
     "webpack": "^5.76.1",
     "webpack-cli": "^5.0.1",
