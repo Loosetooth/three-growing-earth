@@ -1,0 +1,25 @@
+{
+  "name": "three-growing-earth",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "preinstall": "mkdir dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cp src/index.html dist/index.html && cp src/age_lithosphere_map_noscale.tif dist/age_lithosphere_map_noscale.tif && webpack --mode production",
+    "dev": "npm run build && webpack serve --mode development",
+    "deploy": "gh-pages -d public"
+  },
+  "author": "Loosetooth",
+  "license": "MIT",
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "three": "^0.150.1"
+  }
+}
